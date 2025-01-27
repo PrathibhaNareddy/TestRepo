@@ -1,0 +1,12 @@
+name: sample echo
+on:
+  push:
+    branches:
+      main
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ptint message
+        run: echo "Hai Prathibha"
+  
