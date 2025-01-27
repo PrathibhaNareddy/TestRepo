@@ -59,6 +59,5 @@
     },
     "registeredAt": "2025-01-27T15:12:03.028Z",
     "registeredBy": "arn:aws:iam::390403884918:user/PrathibhaIAM",
-    "enableFaultInjection": false,
     "tags": []
 }
