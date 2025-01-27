@@ -48,8 +48,10 @@ jobs:
          # docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
          # docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
          # echo "image=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
-         
-          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -f Dockerfile .
+
+          docker pull nginxdemos/hello-latest
+          docker tag nginxdemos/hello-latest $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+         # docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -f Dockerfile .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
           echo "image=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
 
