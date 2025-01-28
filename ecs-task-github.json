@@ -1,13 +1,13 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:390403884918:task-definition/ecs-task-github:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:390403884918:task-definition/ecs-task-github:4",
     "containerDefinitions": [
         {
-            "name": "ubuntu",
+            "name": "nginxdemo",
             "image": "390403884918.dkr.ecr.us-east-1.amazonaws.com/ecr-github:53ab054a904700766c65f41113a84355ad49a3aa",
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "ubuntu-80-tcp",
+                    "name": "nginxdemo-80-tcp",
                     "containerPort": 80,
                     "hostPort": 80,
                     "protocol": "tcp",
@@ -26,7 +26,7 @@
     "family": "ecs-task-github",
     "executionRoleArn": "arn:aws:iam::390403884918:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 4,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -57,7 +57,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2025-01-27T15:12:03.028Z",
+    "registeredAt": "2025-01-28T06:18:06.851Z",
     "registeredBy": "arn:aws:iam::390403884918:user/PrathibhaIAM",
     "tags": []
 }
